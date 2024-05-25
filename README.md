@@ -1,5 +1,3 @@
----
-
 # Marvel Superheroes Application [View Live](https://tanmaytb404.github.io/Superhero-Hunter/)
 
 This project demonstrates a simple web application that fetches and displays a list of Marvel Superheroes. It includes features like searching for superheroes, adding/removing them from favorites, and displaying detailed information about each superhero.
@@ -32,5 +30,3 @@ This project demonstrates a simple web application that fetches and displays a l
 
 ## Contributing
 Contributions are welcome! If you have any suggestions or improvements, please feel free to submit a pull request.
-
----
