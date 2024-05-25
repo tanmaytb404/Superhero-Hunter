@@ -1,6 +1,5 @@
 const publicKey = '762b8b2b4f1b7b490d510df0f917b6db';
-const privateKey = '96f75a37a1009f395eb245d987bb956c382f292a';
-let url = `http://gateway.marvel.com/v1/public/characters?ts=1&apikey=${publicKey}&hash=20ba6ef5ad5fd1dcf1e034f14ad74167`;
+let url = `https://gateway.marvel.com/v1/public/characters?ts=1&apikey=${publicKey}&hash=20ba6ef5ad5fd1dcf1e034f14ad74167`;
 let characters = []; // stores api response
 
 /* fetch api details from marvel api */
