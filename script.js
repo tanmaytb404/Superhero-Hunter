@@ -44,7 +44,6 @@ function displayCharacters(characters) {
 
 // Check if the card is already present in the list
 export function checkList(id) {
-    console.log(id)
     const favSuperheroList = JSON.parse(localStorage.getItem('superheroList')) || [];
     return favSuperheroList.includes(id);
 }
@@ -84,7 +83,6 @@ function saveDetails() {
 export function updateBtnProperties(btn) {
     // Set the button text based on local storage data will be perform without event listner
     let card = btn.closest('.card');
-    console.log(card)
     if (favSuperheroList.includes(card.dataset.id)) {
         btn.textContent = "Remove from favourite";
         btn.classList.remove("btn-outline-danger");
@@ -123,9 +121,7 @@ search.addEventListener("input", (e) => {
         let searchKey = e.target.value.toLowerCase();
         let searchResult = item.name.toLowerCase();
         if (searchResult.includes(searchKey)) {
-
             searchCharacters.push(item);
-            console.log(searchCharacters)
         }
     });
     displayCharacters(searchCharacters); //show characters based on the search result
