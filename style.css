@@ -1,0 +1,103 @@
+body{
+    background-color: #212529 !important;
+    font-family: ubuntu;
+}
+.nav{
+    border: 1px solid rebeccapurple;
+}
+.container-fluid{
+    margin-left: 20vw !important;
+    margin-right: 20vw !important;
+    padding: 0;
+}
+
+.page-link{
+    background-color: #7CB342 !important
+}
+
+.cardContainer{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.cardContainer .card{
+    margin: 1em;
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+}
+
+.cardContainer .card:hover {
+    transform: scale(1.05);
+}
+
+.cardContainer .card-body{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.activity{
+    margin: 1%;
+}
+
+.cardContainer .card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-img-top{
+height: 200px;
+object-fit: cover;
+}
+
+.superheroContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.superheroCard {
+    width: 50%;
+    font-size: 1.2em;
+    display: flex; /* Ensure flexbox is used */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center items horizontally */
+    height: 80vh;
+    width: 100vw;
+}
+
+.superheroCard img {
+    margin-top: 2%;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.superheroCard .card-body{
+    max-width: 50vw;
+}
+
+
+.placeholderText{
+    color: white;
+    text-align: center;
+    margin-top: 30vh;
+    opacity: 0.3;
+    font-size: 1.1em;
+    display: none;
+}
