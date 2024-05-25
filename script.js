@@ -1,10 +1,10 @@
 const publicKey = '762b8b2b4f1b7b490d510df0f917b6db';
-let url = `https://gateway.marvel.com/v1/public/characters?ts=1&apikey=${publicKey}&hash=20ba6ef5ad5fd1dcf1e034f14ad74167`;
+// let url = `https://gateway.marvel.com/v1/public/characters?ts=1&apikey=${publicKey}&hash=20ba6ef5ad5fd1dcf1e034f14ad74167`;
 let characters = []; // stores api response
 
 /* fetch api details from marvel api */
 async function fetchApi() {
-    let apiResponse = await fetch(url);
+    let apiResponse = await fetch(`https://gateway.marvel.com/v1/public/characters?ts=1&apikey=${publicKey}&hash=20ba6ef5ad5fd1dcf1e034f14ad74167`);
     characters = await apiResponse.json();
     characters = characters.data.results;
     displayCharacters(characters); // function to display the characters in frontend
